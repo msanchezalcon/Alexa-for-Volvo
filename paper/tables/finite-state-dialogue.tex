@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\begin{center}
+% Table should not be wider than 10cm
+\begin{tabular}{p{2cm}p{5cm}p{3cm}}
+Speaker & Utterance                                          & State      \\
+\hline
+User   & Alexa, tell plan my trip I need a vacation.         & Invocation \\
+System & Where are you going?                                & State 1    \\
+User   & London.                                             &            \\
+System & When do you want to leave?                          & State 2    \\
+User   & Thursday.                                           &            \\
+System & Where are you going?                                & State 3    \\
+User   & Paris.                                              &            \\
+System & Do you want to go from London to Paris on Thursday? &            \\
+User   & Yes.                                                & Fulfilled 
+\end{tabular}
+\caption{A dialogue using a finite-state approach.}
+\end{center}
+\end{table}

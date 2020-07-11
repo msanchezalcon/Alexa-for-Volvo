@@ -1,0 +1,130 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{mlt-thesis-2015}
+
+% With Xetex/Luatex this shouldn't be used
+%\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+%% Our own packages
+\usepackage{float}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, automata, positioning}
+%% ============================================================================
+
+\title{Title of the thesis}
+\subtitle{Subtitle}
+\author{Elin Hagman \\ Miriam Sánchéz}
+
+\begin{document}
+
+%% ============================================================================
+%% Title page
+%% ============================================================================
+\begin{titlepage}
+
+\maketitle
+
+\vfill
+
+\begingroup
+\renewcommand*{\arraystretch}{1.2}
+\begin{tabular}{l@{\hskip 20mm}l}
+\hline
+Master's Thesis: & 30 credits)\\
+Programme: & Master’s Programme in Language Technology\\
+Level: & Advanced level \\
+Semester and year: & Spring, 2020\\
+Supervisor & Staffan Larsson\\
+Examiner & (name of the examiner)\\
+Report number & (number will be provided by the administrators) \\
+Keywords & (enter a few keywords) 
+\end{tabular}
+\endgroup
+
+\thispagestyle{empty}
+\end{titlepage}
+
+%% ============================================================================
+%% Abstract
+%% ============================================================================
+\newpage
+\singlespacing
+\section*{Abstract}
+
+Brief summary of research question, background, method, results\ldots
+
+\thispagestyle{empty}
+
+%% ============================================================================
+%% Preface
+%% ============================================================================
+\newpage
+\section*{Preface}
+
+Acknowledgements, etc.
+
+\thispagestyle{empty}
+
+%% ============================================================================
+%% Contents
+%% ============================================================================
+\newpage
+
+\begin{spacing}{0.0}
+\tableofcontents
+\end{spacing}
+
+\thispagestyle{empty}
+
+%% ============================================================================
+%% Introduction
+%% ============================================================================
+\newpage
+\setcounter{page}{1}
+
+\section{Introduction}
+\label{sec:intro}
+\input{sections/introduction}
+
+\newpage
+
+\section{Background}
+\label{sec:background}
+\input{sections/background}
+
+\newpage
+
+\section{Method}
+\label{sec:method}
+\input{sections/method}
+
+\newpage
+
+\section{Results}
+\label{sec:results}
+\input{sections/results}
+
+\newpage
+
+\section{Discussion}
+\label{sec:discussion}
+\input{sections/discussion}
+
+\newpage
+
+\addcontentsline{toc}{section}{References}
+\bibliography{bibliography}
+
+\newpage
+\section{Appendices}
+\input{sections/appendices}
+
+\end{document}
+
+

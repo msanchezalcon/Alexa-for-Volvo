@@ -1,0 +1,26 @@
+\begin{figure}[H]
+    \centering
+% Style
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, text width=3cm,fill=blue!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+%Flowchart---------------------------------------------------------
+\begin{tikzpicture}[node distance=2cm,on grid]
+\node[state, initial, accepting]    (q1) {$invocation$};
+\node[state, right of=q1]           (q2) {$state2$};
+\node[state, right of=q2]           (q3) {$state3$};
+\node[state, right of=q3]           (q4) {$state4$};
+\node[state,accepting, right of=q4] (q5) {$fulfilled$};
+\draw [arrow](q1) edge node [above] {\tt } (q2);
+\draw [arrow](q2) edge node [above] {\tt } (q3);
+\draw [arrow](q3) edge node [above] {\tt } (q4);
+\draw [arrow](q4) edge node [above] {\tt } (q5);
+\end{tikzpicture}
+\caption{the transition states of a finite-state dialogue manager}
+% give it a name
+\label{fig:FSA}
+\end{figure}

@@ -1,0 +1,173 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "driver's handbook",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AcknowledgementIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes",
+                        "yepp",
+                        "alright",
+                        "all right",
+                        "yeah",
+                        "okay done",
+                        "okay perfect",
+                        "mm",
+                        "ok",
+                        "okay",
+                        "ah okay",
+                        "perfect",
+                        "sure"
+                    ]
+                },
+                {
+                    "name": "ConnectToBluetoothIntent",
+                    "slots": [],
+                    "samples": [
+                        "connect to bluetooth",
+                        "how do I connect my phone to bluetooth",
+                        "connect bluetooth",
+                        "connect my phone to bluetooth",
+                        "how I connect to bluetooth",
+                        "how I connect my phone to bluetooth"
+                    ]
+                },
+                {
+                    "name": "CleanInformationDisplayIntent",
+                    "slots": [],
+                    "samples": [
+                        "I would like to clean the information display",
+                        "how to clean the information display",
+                        "how can I clean the information display",
+                        "how do I clean the information display",
+                        "clean information display",
+                        "clean the information display"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "what",
+                        "how",
+                        "again",
+                        "sorry how",
+                        "what did you say",
+                        "sorry what did you say",
+                        "sorry what"
+                    ]
+                },
+                {
+                    "name": "SetTargetFuelConsumptionIntent",
+                    "slots": [],
+                    "samples": [
+                        "I would like to set a target fuel consumption",
+                        "how can I set a target fuel consumption",
+                        "how to set a target fuel consumption",
+                        "how to set target fuel consumption",
+                        "how do I set target fuel consumption",
+                        "set target fuel consumption",
+                        "how do I set a target fuel consumption",
+                        "set a target fuel consumption"
+                    ]
+                },
+                {
+                    "name": "TurnOffHaloLightsIntent",
+                    "slots": [],
+                    "samples": [
+                        "turn off the halo lights",
+                        "turn off the halo light",
+                        "I would like to turn off the halo light",
+                        "I would like to turn off the halo lights",
+                        "how to turn off the halo lights",
+                        "how to turn off the halo light",
+                        "how can I turn off the halo light",
+                        "how can I turn off the halo lights",
+                        "How do I turn off the halo lights",
+                        "How do I turn off the halo light"
+                    ]
+                },
+                {
+                    "name": "AccessFusesAndRelaysForBodyworkIntent",
+                    "slots": [],
+                    "samples": [
+                        "access the fuses for the bodywork",
+                        "how to access the fuses for the bodywork",
+                        "I would like to access the fuses for the bodywork",
+                        "find the fuses for the bodywork",
+                        "where can I find the fuses for the bodywork",
+                        "how to find the fuses for the bodywork",
+                        "where to find the fuses for the bodywork",
+                        "Where do I find the fuses for the bodywork"
+                    ]
+                },
+                {
+                    "name": "ChangeFuseForRelayCentreIntent",
+                    "slots": [],
+                    "samples": [
+                        "I would like to change a fuse",
+                        "change a fuse",
+                        "how can I change a fuse",
+                        "how to change a fuse",
+                        "how do I change a fuse"
+                    ]
+                },
+                {
+                    "name": "EmergencyStopIntent",
+                    "slots": [],
+                    "samples": [
+                        "I would like to stop the truck",
+                        "how to stop the truck in case of emergency",
+                        "how to stop the truck",
+                        "where can I stop the truck in case of emergency",
+                        "where can I stop the truck",
+                        "stop the truck in case of emergency",
+                        "stop the truck",
+                        "how can I stop the truck",
+                        "how do I stop the truck"
+                    ]
+                },
+                {
+                    "name": "CleanHeadlightsIntent",
+                    "slots": [],
+                    "samples": [
+                        "clean the headlights",
+                        "how can I clean the headlights",
+                        "how to clean headlights",
+                        "how to clean the headlights",
+                        "how do I clean the headlights",
+                        "I would like to clean the headlights. How do I do that"
+                    ]
+                },
+                {
+                    "name": "HowIntent",
+                    "slots": [],
+                    "samples": [
+                        "how to access them",
+                        "how do I access them",
+                        "how do I access it",
+                        "how to access it"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

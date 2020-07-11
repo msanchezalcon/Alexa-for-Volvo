@@ -1,0 +1,132 @@
+{
+	"ConnectToBluetoothIntent": {
+		"1": {
+			"speech": "Okay. So for that you to go the menu on the secondary display."
+		},
+		"2": {
+			"speech": "And then you first select settings."
+		},
+		"3": {
+			"speech": "And finally system settings."
+		},
+		"4": {
+			"speech": "Then select network and internet."
+		},
+		"5": {
+			"speech": "And then Bluetooth."
+		},
+		"6": {
+			"speech": "Finally, in the menu: select 'search for devices'"
+		},
+		"7": {
+			"speech": "That's it."
+		}
+	},
+
+	"CleanInformationDisplayIntent": {
+		"1": {
+			"speech": "The information display has protected plastic screens so cleaning must be done with a vacuum cleaner."
+		},
+		"2": {
+			"speech": "So that's it. You can also use a wiping cloth but it may scratch the surface."
+		}
+	},
+
+	"SetTargetFuelConsumptionIntent": {
+		"1": {
+			"speech": "Alright. You first need to press the 'shift focus' key to shift focus to the side display."
+		},
+		"2": {
+			"speech": "Then select 'assignment' in the bottom bar."
+		},
+		"3": {
+			"speech": "Then select 'trip computer'."
+		},
+		"4": {
+			"speech": "And then select 'set target fuel consumption'."
+		},
+		"5": {
+			"speech": "Use the arrow keys on the steering wheel keypad to set your target value."
+		},
+		"6": {
+			"speech": "And then just press 'okay' to save your settings. That's it."
+		}
+	},
+
+	"TurnOffHaloLightsIntent": {
+		"1": {
+			"speech": "Okay. On the side display, go to 'settings'."
+		},
+		"2": {
+			"speech": "Then 'vehicle settings'."
+		},
+		"3": {
+			"speech": "And from there you can turn off the halo lights."
+		}
+	},
+
+	"AccessFusesAndRelaysForBodyworkIntent": {
+		"1": {
+			"speech": "First, you need to set the electrical system in a parked function mode.",
+			"subdialogue": {
+				"1": {
+					"speech": "The fuses and relays for the bodywork are in front of the passenger seat, to the right of the cupholder."
+				}
+			}
+		},
+		"2": {
+			"speech": "If possible, close the circuit in question before changing the fuse."
+		},
+		"3": {
+			"speech": "That's it. Be careful because the fuse holder can burn if the voltage stays switched on."
+		}
+	},
+
+	"ChangeFuseForRelayCentreIntent": {
+		"1": {
+			"speech": "Okay, so before changing a fuse set the electrical system in the parked function mode."
+		},
+		"2": {
+			"speech": "The fuse and relay centre is located in the centre of the instrument panel."
+		},
+		"3": {
+			"speech": "Pull the handle that is located at the rear edge of the cover, next to the cup holders."
+		},
+		"4": {
+			"speech": "You need to pull the rear edge of the cover upwards, so that the clips release."
+		},
+		"5": {
+			"speech": "And now remove the cover. You're done."
+		}
+	},
+
+	"EmergencyStopIntent": {
+		"1": {
+			"speech": "Okay, so first pull to the side and stop the truck. Ok?."
+		},
+		"2": {
+			"speech": "Think about safety, so don't move the truck around if the road is busy."
+		},
+		"3": {
+			"speech": "You need a vest. There is one in the luggage compartment on each side of the truck."
+		},
+		"4": {
+			"speech": "Put on the vest and then take out the warning triangle."
+		},
+		"5": {
+			"speech": "Finally, the warning triangle needs to be placed at least 200 meters behind the truck. You're done."
+		}
+	},
+
+	"CleanHeadlightsIntent": {
+		"1": {
+			"speech": "Okay, so first make sure the plastic lenses are cool before you start."
+		},
+		"2": {
+			"speech": "The lenses are sensitive to chemicals, so make sure you only use a cleaning cloth or soap and water to clean them."
+		},
+		"3": {
+			"speech": "Also, make sure not to use high pressure washing. That's it."
+		}
+	}
+}

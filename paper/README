@@ -1,0 +1,20 @@
+To use the MLT Master's Thesis LaTeX template, you need to have a modern
+TeX engine capable of using the fontspec package, such as LuaTeX or XeTeX.
+
+You may also need to edit a few lines in the style file mlt-thesis-2015.sty,
+to specify the fonts installed on your system. You need a roman font
+(e.g. Times New Roman), a sans-serif font (e.g. Arial), a monospace
+font (e.g. Courier New), and a narrow sans-serif font (e.g. Arial
+Narrow). On Linux systems, there will typically be a selection of free
+fonts instead of the above-mentioned fonts. Here is one example:
+
+\newfontfamily\csffamily{Liberation Sans Narrow}
+\setromanfont[Ligatures=TeX]{FreeSerif}
+\setsansfont[Ligatures=TeX]{FreeSans}
+\setmonofont[Ligatures=TeX]{FreeMono}
+
+A few other packages are also used, but they should be available in
+most LaTeX installations.
+
+Contact Richard Johansson (richard.johansson@svenska.gu.se) if you
+have any questions about how to use the template.

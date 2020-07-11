@@ -1,0 +1,65 @@
+
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=2cm, text centered, text width=3cm, draw=black]
+\tikzstyle{speak} = [rectangle, minimum width=3cm, minimum height=2cm, text centered, text width=3cm, fill=lightgray!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{oval} = [ellipse, minimum width0.5cm, minimum height=2cm, text centered, text width=2cm, draw=black]
+\tikzstyle{final} = [circle, minimum width=2cm, minimum height=2cm, text centered, text width=2cm, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+
+%---------------------------------------------------------
+\begin{figure}[htbp]
+
+\begin{tikzpicture}
+\node (species1) [shape=rectangle,draw] {
+            \begin{tabular}{p{2cm}|p{2cm}}
+                \multicolumn{2}{c}{{Form}} \\
+                \hline
+                Travel to &  \\
+                \hline
+                Travel from & \\ 
+                \hline
+                Travel date & 
+            \end{tabular}
+            };
+            
+\node[decision, below=5mm of species1]      (formfilled) {Form filled?};
+\node[oval, left=5mm of formfilled]       (fulfill1) {Book the trip};
+\node[oval, below=5mm of formfilled]       (next) {Ask for next slot};
+\node[speak, left=5mm of next]            (where) {Where are you travelling from?};
+
+\node[process, below=5mm of next]           (reply) {Receive user reply};
+\node[speak, left=5mm of reply]           (answer) {From London to Paris};
+\node[process, below=5mm of reply]          (NLU) {NLU/Backend};
+\node[oval, right=2cm of NLU]               (update) {Update form};
+
+\node (species2) [shape=rectangle,draw, below=5mm of update] {
+            \begin{tabular}{p{2cm}|p{2cm}}
+                \multicolumn{2}{c}{{Form}} \\
+                \hline
+                Travel to & Paris \\
+                \hline
+                Travel from & London\\ 
+                \hline
+                Travel date & 
+            \end{tabular}
+            };
+
+\draw (species1) -- (formfilled);
+\draw [arrow] (formfilled) -- node[anchor=north] {yes} (fulfill1);
+\draw [arrow] (formfilled) -- node[anchor=west] {no} (next);
+\draw [arrow] (next) -- (where);
+\draw [arrow] (answer) -- (reply);
+\draw [arrow] (reply) -- (NLU);
+\draw [arrow] (NLU) --  node[anchor=south] {continue} (update);
+\draw         (NLU) --  node[anchor=north] {slot filling} (update);
+\draw [dashed] (update) -- (species2);
+
+\draw [arrow] (update) |- (formfilled);
+
+\end{tikzpicture}
+    
+\caption{an example of the trip planner skill built using form-based dialogue manager with slots}
+\label{fig:trip-planner}
+
+\end{figure}
